@@ -122,17 +122,17 @@ html {
 }
 /* End hero section */
 
+
 /* Start about section */
 .about {
   width: 100%;
   min-width: 50vh;
-  padding: 10rem 5 rem;
+
   flex-direction: column;
+  padding: 10rem 5 rem;
 }
 
-.about__info {
-  text-align: center;
-}
+.about__info {text-align: center;}
 
 .about__heading {
   font-size: 4rem;
@@ -142,33 +142,36 @@ html {
 }
 
 .about__desc {
+  margin-top: 10px;
+
   font-size: 1.3rem;
   line-height: 2rem;
-  margin-top: 10px;
 }
 
 .about__button {
-  padding: 1.6rem 2.6rem;
   display: inline-block;
+
+  padding: 1.6rem 2.6rem;
+  margin: 20px 0;
+
   background: rgba(0, 0, 0, 0.548);
-  color: whitesmoke;
-  text-decoration: none;
+
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  margin: 20px 0;
-}
+  color: whitesmoke;
 
-.about__img {
-
+  text-decoration: none;
 }
 
 .about__wrapper {
-  margin-top: 30px;
   height: auto;
   max-width: 400px;
-  position: relative;
+
   display: inline-block;
+  position: relative;
+
+  margin-top: 30px;
 }
 
 .about__wrapper img {
@@ -178,14 +181,16 @@ html {
 
 .about__wrapper::after {
   content: '';
+  width: 70%;
+  height: 120%;
+
   position: absolute;
   right: -5rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 70%;
-  height: 120%;
-  background: ;
-  
+
+  background: rgba(34, 33, 33, 0.158);
+  z-index: -1;
 }
 /* End about section */
 
