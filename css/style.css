@@ -47,14 +47,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 html {
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-
   user-select: none;
 }
 
 .container {
   width: 100%;
   height: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,12 +63,10 @@ html {
 .hero {
   min-height: 80vh;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-
   padding-top: 50px;
   background: black;
 }
@@ -95,24 +91,19 @@ html {
 
 .hero__button {
   display: inline-block;
-
   margin-top: 30px;
   padding: 2rem 5rem;
-
   background: rgba(85, 85, 85, 0.534);
-
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: .6rem;
   color: white;
-
   text-decoration: none;
 }
 
 .hero__img {
   height: auto;
   width: 40%;
-
   margin-bottom: 3rem;
 }
 
@@ -127,7 +118,6 @@ html {
 .about {
   width: 100%;
   min-width: 50vh;
-
   flex-direction: column;
   padding: 10rem 5 rem;
 }
@@ -143,24 +133,20 @@ html {
 
 .about__desc {
   margin-top: 10px;
-
   font-size: 1.3rem;
   line-height: 2rem;
 }
 
 .about__button {
   display: inline-block;
-
   padding: 1.6rem 2.6rem;
   margin: 20px 0;
-
   background: rgba(0, 0, 0, 0.548);
 
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   color: whitesmoke;
-
   text-decoration: none;
 }
 
@@ -170,7 +156,6 @@ html {
 
   display: inline-block;
   position: relative;
-
   margin-top: 30px;
 }
 
@@ -183,12 +168,10 @@ html {
   content: '';
   width: 70%;
   height: 120%;
-
   position: absolute;
   right: -5rem;
   top: 50%;
   transform: translateY(-50%);
-
   background: rgba(34, 33, 33, 0.158);
   z-index: -1;
 }
@@ -199,7 +182,6 @@ html {
 .services {
   min-height: 60vh;
   flex-direction: column;
-
   padding: 10rem 5rem;
 }
 
@@ -217,7 +199,6 @@ html {
 
 .service__desc {
   margin-top: 20px;
-
   font-size: 1.3rem;
   line-height: 2rem;
 }
@@ -228,7 +209,6 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   margin-top: 30px;
 }
 
@@ -236,7 +216,6 @@ html {
   width: 100%;
   min-height: 300px;
   position: relative;
-
   margin: 5px;
   transition: .3s ease transform;
 }
@@ -246,7 +225,6 @@ html {
   display: block;
   height: 100%;
   width: 100%;
-
   transform-style: preserve-3d;
   transition: .3s ease transform;
 }
@@ -257,16 +235,12 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   height: 100%;
   width: 100%;
-
   position: absolute;
   left: 0;
   top: 0;
-
   backface-visibility: hidden;
-
   background: rgba(0, 0, 0, 0.13);
   padding: 10px;
 }
@@ -278,7 +252,6 @@ html {
 
 i {
   margin-bottom: 10px;
-
   font-size: 4rem;
   color: black;
 }
@@ -291,19 +264,14 @@ i {
 
 .service__back_desc {
   margin-top: 10px;
-
   text-align: center;
   font-size: 1.3rem;
 }
 
 .service:nth-of-type(2) .service__front {
   position: relative;
-
-  /*
-  ! background-image: url();
-  ! background-size: cover;
-  */
-
+  background: url('../img/test.jpg');
+  background-size: cover;
   color: white;
 }
 
@@ -312,10 +280,8 @@ i {
   position: absolute;
   left: 0;
   top: 0;
-
   height: 100%;
   width: 100%;
-
   background: rgba(0, 0, 0, 0.274);
   z-index: -1;
 }
@@ -324,3 +290,37 @@ i {
   color: white;
 }
 /* End service section */
+
+
+/* Footer section */
+.footer {
+  min-height: 20vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 5rem;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.footer__heading {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer__info {
+  padding-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+}
+
+.footer__follow-icon a {
+  display: inline-block;
+  margin: .4rem;
+  color: white;
+  font-size: 3rem;
+}
+/* End footer section */
+
