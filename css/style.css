@@ -59,6 +59,114 @@ html {
 }
 
 
+/* Nav bar */
+#nav-bar {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-bar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background: black;
+}
+
+.brand a {
+  font-family: 'Flash Back - Demo', sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  height: 70px;
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease transform;
+}
+
+.bar {
+  height: 2px;
+  width: 30px;
+  position: relative;
+  display: flex;
+  background: white;
+}
+
+.bar::before,
+.bar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  transition: .3s ease all;
+}
+
+.bar::before {top: 8px;}
+.bar::after { bottom: 8px;}
+
+.nav-list ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5rem 0;
+  background: rgb(46, 45, 45);
+  transform: translateY(-100%);
+  transition: .3s ease transform;
+  text-align: center;
+}
+.nav-list ul li {
+  display: block;
+  position: relative;
+}
+
+.nav-list ul li::after {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  height: .2rem;
+  background: white;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scale(0);
+  transition: .3s ease transform;
+}
+
+.nav-list ul li:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+
+.nav-list ul li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  letter-spacing: .15rem;
+  padding: 2rem 0;
+}
+/* End nav bar */
+
+
 /* Hero section */
 .hero {
   min-height: 80vh;
@@ -367,4 +475,9 @@ i {
   }
   .service {margin: 0;}
  }
+
+@media only screen and (min-width:1200px) {
+  .hero__head {font-size: 6rem;}
+  .hero__subheading {letter-spacing: .8rem;}
+}
  /* End media query*/
